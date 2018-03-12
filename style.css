@@ -1,0 +1,277 @@
+body {
+    font-family: Georgia, serif;
+}
+
+#menuBar {
+    position: absolute;
+    height: 70px;
+    top:0;
+    left:0;
+    right:0;
+    background: ;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    z-index: 1;
+}
+
+.logobox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.linkbox {
+    position: absolute;
+    margin: 25px;
+    display: none;
+}
+
+.logotext {
+    font-size: 35px;
+}
+
+.logoX {
+    font-size: 46px;
+}
+
+.whereTitle {
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.flightTable {
+    position: absolute;
+    top: 750px;
+    height: 800px;
+    left: 0;
+    right: 0;
+}
+
+.destinationBox {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    height: 680px;
+    text-align: center;
+    background: lightgrey;
+    background-size: contain;
+    
+}
+
+.selectDest {
+    position: absolute;
+    padding: 20px;
+    left:calc(35px);
+    right:calc(35px);
+    top: calc(16%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: grey;
+}
+
+.guaranteebox {
+    position: absolute;
+    background: grey;
+    height: 340px;
+    top: 130px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    left: 0;
+    right: 0;
+}
+
+.calendartitles {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.oneway {
+    float: right;
+}
+
+.calendarcontainer {
+    position: relative;
+    width: 100%;
+    
+}
+
+.calendar1, .calendar2 {
+    text-align: left;
+    float: left;
+    margin: 20px;
+}
+
+.monthtitle {
+    position: relative;
+    left: 30%;
+}
+
+.calendar1 {
+    left: 0;
+}
+
+.calendar2 {
+    right: 0;
+}
+
+.month {
+    padding: 10px;
+    background: indianred;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    margin: auto;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: white;
+    text-transform: uppercase;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: indianred;
+    color: white !important
+}
+
+.destTitle {
+    color: red;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.search {
+    width: 100%;
+    text-align: left;
+}
+
+.searchbutton {
+    background-color: indianred;
+    width: 100%;
+    border: none;
+    height: 50px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.destBox {
+    width: 100%;
+    height: 50px;
+    
+}
+
+#selectFrom {;
+}
+
+
+#selectTo {
+}
+
+.flightTable {
+    background: indianred;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.flightresults th {
+    padding: 25px;
+    text-align: left;
+}
+
+.flightContainer {
+    position: absolute;
+    top: calc(5%);
+    left: calc(5%);
+    right: calc(5%);
+}
+
+.flightresults {
+    width: 100%;
+    border: solid gray 1px;
+    margin: 5px;
+}
+
+.flightresults th {
+    text-transform: uppercase;
+    
+}
+
+.flightresults td {
+    padding: 20px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+
+
+/* fksdjflk */
+
