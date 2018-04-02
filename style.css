@@ -1,5 +1,40 @@
 body {
     font-family: Georgia, serif;
+    color: #373737;
+}
+
+#menublock {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    position: absolute;
+    left:0;
+    right:0;
+    top: 70px;
+    height: 100%;
+    background: #373737;
+    opacity: 0.6;
+}
+
+#menu {
+    width: 100%;
+}
+
+
+.active2 {
+    border-left: solid #C0B283 5px;
+}
+
+#hiddenmenu {
+    display: none;
+    position: absolute;
+    width: 310px;
+    bottom: 0;
+    top:70px;
+    background: white;
+    z-index: 1;
+    left:0;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0px 0 rgba(0, 0, 0, 0.10);
 }
 
 #menuBar {
@@ -8,21 +43,84 @@ body {
     top:0;
     left:0;
     right:0;
-    background: ;
-    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    background: white;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.10);
     z-index: 1;
 }
 
-.logobox {
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.burgermenu {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: calc(10%);
+    left: 16px;
+}
+
+.menutext {
+    position: absolute;
+    color: white;
+    top: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    left: 16px;
+}
+
+.hellomessage {
+    position: absolute;
+    left:0;
+    right:0;
+    top: 70px;
+    height: 250px;
+    background: url("https://orig00.deviantart.net/bb55/f/2018/073/9/3/pexels_photo_723240_by_fhari-dc5v2bf.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100%;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.10);
+}
+
+.messagestyle {
+    position: absolute;
+    left:0;
+    right:0;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    top: 50px;
+    text-shadow: 0 0 1px #373737;
+    padding: 20px;
+}
+
+.logobox {
+    position: absolute; 
+    top: 6px;
+    left: 100px;
 }
 
 .linkbox {
     position: absolute;
-    margin: 25px;
-    display: none;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    background: #C0B283;
 }
 
 .logotext {
@@ -33,28 +131,24 @@ body {
     font-size: 46px;
 }
 
-.whereTitle {
-    font-size: 35px;
-    color: white;
-    text-transform: uppercase;
-}
 
 .flightTable {
     position: absolute;
-    top: 750px;
+    top: 900px;
     height: 800px;
     left: 0;
     right: 0;
 }
 
-.destinationBox {
+#destinationBox {
     position: absolute;
-    top: 70px;
+    z-index: -1;
+    top: 320px;
     left: 0;
     right: 0;
     height: 680px;
     text-align: center;
-    background: lightgrey;
+    background: #F4F4F4;
     background-size: contain;
     
 }
@@ -64,15 +158,15 @@ body {
     padding: 20px;
     left:calc(35px);
     right:calc(35px);
-    top: calc(16%);
+    top: calc(5%);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    background: grey;
+    background: white;
 }
 
 .guaranteebox {
     position: absolute;
-    background: grey;
+    background: white;
     height: 340px;
     top: 130px;
     border-bottom-left-radius: 5px;
@@ -84,6 +178,7 @@ body {
 .calendartitles {
     font-size: 15px;
     text-transform: uppercase;
+    color: #C0B283;
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -93,15 +188,27 @@ body {
 }
 
 .calendarcontainer {
-    position: relative;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
     width: 100%;
     
 }
 
+.checkBox {
+  height: 10px;
+  width: 25px;
+  background-color: #F4F4F4;
+}
+
+
+
 .calendar1, .calendar2 {
+    position: absolute;
     text-align: left;
     float: left;
     margin: 20px;
+    border: solid #F4F4F4 1px;
 }
 
 .monthtitle {
@@ -111,15 +218,17 @@ body {
 
 .calendar1 {
     left: 0;
+    width: calc(45%);
 }
 
 .calendar2 {
     right: 0;
+    width: calc(45%);
 }
 
 .month {
     padding: 10px;
-    background: indianred;
+    background: #C0B283;
     text-align: center;
 }
 
@@ -146,23 +255,29 @@ body {
     padding-top: 10px;
 }
 
+.searchbox {
+    position: absolute;
+    right:calc(20px);
+    bottom: 30px;
+}
+
 .weekdays {
     margin: 0;
     padding: 10px 0;
-    background-color: white;
-    text-transform: uppercase;
+    background-color: #F4F4F4;
 }
 
 .weekdays li {
     display: inline-block;
     width: 13.6%;
-    color: #666;
+    color: #373737;
+    font-size: 12px;
     text-align: center;
 }
 
 .days {
     padding: 10px 0;
-    background: #eee;
+    background: white;
     margin: 0;
 }
 
@@ -173,17 +288,17 @@ body {
     text-align: center;
     margin-bottom: 5px;
     font-size:12px;
-    color: #777;
+    color: #373737;
 }
 
 .days li .active {
     padding: 5px;
-    background: indianred;
-    color: white !important
+    background: #DCD0C0;
+    color: white;
 }
 
 .destTitle {
-    color: red;
+    color: #C0B283;
     font-size: 15px;
     text-transform: uppercase;
     font-weight: bold;
@@ -195,12 +310,13 @@ body {
 }
 
 .searchbutton {
-    background-color: indianred;
-    width: 100%;
+    background-color: #C0B283;
     border: none;
+    font-family: georgia, serif;
     height: 50px;
     color: white;
-    padding: 15px 32px;
+    width: 150px;
+    border: solid #F4F4F4 1px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -220,8 +336,53 @@ body {
 #selectTo {
 }
 
+.buybutton {
+    background-color: #C0B283;
+    border: none;
+    font-family: georgia, serif;
+    height: 30px;
+    color: white;
+    width: 90px;
+    border: solid #F4F4F4 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.resultholder {
+}
+
+.timeshow {
+    font-size: 22px;
+}
+
+.pcode {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.price {
+    color: maroon;
+    font-weight: bold;
+    
+}
+
+.resultborder {
+    height: 50px;
+    text-align: center;
+    background-color: #C0B283; 
+}
+
+
+.flightdate {
+    font-size: 15px;
+}
+
 .flightTable {
-    background: indianred;
+    background: #F4F4F4;
     position: absolute;
     left: 0;
     right: 0;
@@ -230,25 +391,23 @@ body {
 .flightresults th {
     padding: 25px;
     text-align: left;
+    text-transform: uppercase;
 }
+
 
 .flightContainer {
     position: absolute;
-    top: calc(5%);
-    left: calc(5%);
-    right: calc(5%);
+    background: white;
+    left: calc(35px);
+    right: calc(35px);
 }
 
 .flightresults {
-    width: 100%;
-    border: solid gray 1px;
+    width: 99%;
+    border: solid #f4f4f4 1px;
     margin: 5px;
 }
 
-.flightresults th {
-    text-transform: uppercase;
-    
-}
 
 .flightresults td {
     padding: 20px;
@@ -272,6 +431,14 @@ li a {
     background-color: #dddddd;
 }
 
+#menu td a:hover {
+    background-color: #DcD0C0;
+}
 
-/* fksdjflk */
-
+#menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #373737;
+    
+}
