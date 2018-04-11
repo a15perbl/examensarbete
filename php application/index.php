@@ -3,7 +3,7 @@
 <meta charset="UTF-8">
 <head>
 <title>Far och Flyg</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="http://127.0.0.1/phpapp/style.css">
 </head>
 <body>
 <script src="appscript.js"></script>
@@ -21,7 +21,7 @@
         <tr>
             <td class="active2"><a href="">Sök</a></td></tr>
             <tr><td><a href="">Om hemsidan</a></td></tr>
-            <tr><td><a href="">Credits</a></td></tr>
+            <tr><td><a href="">Licens</a></td></tr>
         </table>
     </div>
     
@@ -66,13 +66,13 @@
                 <select class="destBox" name='plats'>
 <?php 
 
-$pdo = new PDO('mysql:dbname=testDB;host=localhost', 'sqllab', 'Tomten2009');
+$pdo = new PDO('mysql:dbname=testDB;host=localhost', 'root', 'password');
 
 foreach($pdo->query("SELECT * FROM destinations ORDER BY LOCATION;") as $row){
 echo '<option value="'.$row['ID'].'">';
 echo $row['LOCATION'];
 echo '</option>';
-}       
+}
 ?>
 </select>
 	</div>
@@ -82,7 +82,7 @@ echo '</option>';
 <select class="destBox" name='plats'>
 <?php 
 
-$pdo = new PDO('mysql:dbname=testDB;host=localhost', 'sqllab', 'Tomten2009');
+$pdo = new PDO('mysql:dbname=testDB;host=localhost', 'root', 'password');
 
 foreach($pdo->query("SELECT * FROM destinations ORDER BY LOCATION;") as $row){
 echo '<option value="'.$row['ID'].'">';
@@ -252,11 +252,9 @@ echo '</option>';
 <div class="resultborder"></div>
 
 <?php
-$pdo = new PDO('mysql:dbname=testDB;host=localhost', 'sqllab', 'Tomten2009');
+$pdo = new PDO('mysql:dbname=testDB;host=localhost', 'root', 'password');
 $pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
 
-// Only make insert if there is a form post to process
-    if(isset($_POST['plats'])){
 		foreach($pdo->query( 'SELECT * FROM flights ORDER BY DATEFLIGHT asc;' ) as $row){
 		echo "<table class='flightresults'>";
 		echo "<tr>
@@ -273,7 +271,7 @@ $pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
 		echo " <td><div class='buttonholder'><button class='buybutton'>Köp</button></div></td></tr>";
 		echo " </table>";
 		}
-	}
+	
 	
 
 
