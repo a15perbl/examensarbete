@@ -90,7 +90,7 @@ body {
     right:0;
     top: 70px;
     height: 250px;
-    background: url("https://orig00.deviantart.net/bb55/f/2018/073/9/3/pexels_photo_723240_by_fhari-dc5v2bf.jpg");
+    background: url("aeroplane-aviation-clouds-272705.jpg");
     background-repeat:no-repeat;
     background-size:cover;
     width:100%;
@@ -326,10 +326,9 @@ body {
 .destBox {
     width: 100%;
     height: 50px;
-    
 }
 
-#selectFrom {;
+#selectFrom {
 }
 
 
