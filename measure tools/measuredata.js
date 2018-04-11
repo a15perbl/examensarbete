@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       a15perbl
-// @match        http://webug.his.se:8080/a15perbl/php/index.php
+// @match        http://127.0.0.1/phpapp/index.php
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js
 // @require      https://code.jquery.com/jquery-2.2.4.min.js
 // @grant        GM_log
@@ -16,15 +16,15 @@
 (function() {
     'use strict';
 
-    var localURL='http://webug.his.se:8080/a15perbl/php/scraped_receiver.php';
+    var localURL='http://127.0.0.1/datareceiver/scraped_receiver.php';
     var scrapedData=[];
 
     var stop = GM_getValue('stop');
     if(!stop){
-        stop = 5;
+        stop = 100;
     }
 
-    GM_setValue('stop', 5);
+    GM_setValue('stop', 100);
 
     var temp = GM_getValue('counter');
     if(!temp){
@@ -35,7 +35,6 @@
     stop = parseInt(stop);
     temp = parseInt(temp);
     temp++;
-    //alert('TMP: '+ temp + ' STOP: ' + stop);
 
     if(temp >= stop){
 
@@ -56,15 +55,6 @@
     var end_time = new Date();
     start_time = new Date(start_time);
     var diff = (start_time - end_time) * -1;
-    //alert(diff + ' ' + start_time + ' <!> ' + end_time);
-    //start_time = 0;
-
-    // Räknar antalet träffar
-    var counter = 0;
-    $(".flightresults").each(function( index ) {
-        counter++;
-    }
-                            );
 
     // Antal sekunder läggs i arrayen scrapedData med push
     scrapedData.push(diff);

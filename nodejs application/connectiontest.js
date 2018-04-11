@@ -77,7 +77,7 @@ http.createServer(function(req, res) {
     'Content-Type': 'text/html'
   });
   res.write('<!DOCTYPE html><html><meta charset="UTF-8"><head><title>Far och Flyg</title>'+
-  '<link rel="stylesheet" type="text/css" href="http://127.0.0.1/phpapp/style.css"></head><body><script src="http://127.0.0.1/phpapp/appscript.js"></script>'+
+  '<link rel="stylesheet" type="text/css" href="style.css"></head><body><script src="appscript.js"></script>'+
   '<div><form action="index.php" method="post"><div id="menublock"></div><div id="hiddenmenu"><table id="menu">' +
   '<tr><td class="active2"><a href="">Sök</a></td></tr><tr><td><a href="">Om hemsidan</a></td></tr><tr><td><a href="">Credits</a></td></tr>'+
   '</table></div><div id="menuBar"><div class="logobox"><span class="logotext">Far</span><span class="logoX">&</span><span class="logotext">Flyg</span>'+
