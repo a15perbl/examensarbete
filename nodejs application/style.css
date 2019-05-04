@@ -1,0 +1,443 @@
+body {
+    font-family: Georgia, serif;
+    color: #373737;
+}
+
+#menublock {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    position: absolute;
+    left:0;
+    right:0;
+    top: 70px;
+    height: 100%;
+    background: #373737;
+    opacity: 0.6;
+}
+
+#menu {
+    width: 100%;
+}
+
+
+.active2 {
+    border-left: solid #C0B283 5px;
+}
+
+#hiddenmenu {
+    display: none;
+    position: absolute;
+    width: 310px;
+    bottom: 0;
+    top:70px;
+    background: white;
+    z-index: 1;
+    left:0;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0px 0 rgba(0, 0, 0, 0.10);
+}
+
+#menuBar {
+    position: absolute;
+    height: 70px;
+    top:0;
+    left:0;
+    right:0;
+    background: white;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.10);
+    z-index: 1;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.burgermenu {
+    position: absolute;
+    top: calc(10%);
+    left: 16px;
+}
+
+.menutext {
+    position: absolute;
+    color: white;
+    top: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    left: 16px;
+}
+
+.hellomessage {
+    position: absolute;
+    left:0;
+    right:0;
+    top: 70px;
+    height: 250px;
+    background: url("aeroplane-aviation-clouds-272705.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100%;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.10);
+}
+
+.messagestyle {
+    position: absolute;
+    left:0;
+    right:0;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    top: 50px;
+    text-shadow: 0 0 1px #373737;
+    padding: 20px;
+}
+
+.logobox {
+    position: absolute; 
+    top: 6px;
+    left: 100px;
+}
+
+.linkbox {
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    background: #C0B283;
+}
+
+.logotext {
+    font-size: 35px;
+}
+
+.logoX {
+    font-size: 46px;
+}
+
+
+.flightTable {
+    position: absolute;
+    top: 900px;
+    height: 800px;
+    left: 0;
+    right: 0;
+}
+
+#destinationBox {
+    position: absolute;
+    z-index: -1;
+    top: 320px;
+    left: 0;
+    right: 0;
+    height: 680px;
+    text-align: center;
+    background: #F4F4F4;
+    background-size: contain;
+    
+}
+
+.selectDest {
+    position: absolute;
+    padding: 20px;
+    left:calc(35px);
+    right:calc(35px);
+    top: calc(5%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: white;
+}
+
+.guaranteebox {
+    position: absolute;
+    background: white;
+    height: 340px;
+    top: 130px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    left: 0;
+    right: 0;
+}
+
+.calendartitles {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #C0B283;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.oneway {
+    float: right;
+}
+
+.calendarcontainer {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    
+}
+
+.checkBox {
+  height: 10px;
+  width: 25px;
+  background-color: #F4F4F4;
+}
+
+
+
+.calendar1, .calendar2 {
+    position: absolute;
+    text-align: left;
+    float: left;
+    margin: 20px;
+    border: solid #F4F4F4 1px;
+}
+
+.monthtitle {
+    position: relative;
+    left: 30%;
+}
+
+.calendar1 {
+    left: 0;
+    width: calc(45%);
+}
+
+.calendar2 {
+    right: 0;
+    width: calc(45%);
+}
+
+.month {
+    padding: 10px;
+    background: #C0B283;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    margin: auto;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.searchbox {
+    position: absolute;
+    right:calc(20px);
+    bottom: 30px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #F4F4F4;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #373737;
+    font-size: 12px;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: white;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #373737;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #DCD0C0;
+    color: white;
+}
+
+.destTitle {
+    color: #C0B283;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.search {
+    width: 100%;
+    text-align: left;
+}
+
+.searchbutton {
+    background-color: #C0B283;
+    border: none;
+    font-family: georgia, serif;
+    height: 50px;
+    color: white;
+    width: 150px;
+    border: solid #F4F4F4 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.destBox {
+    width: 100%;
+    height: 50px;
+}
+
+#selectFrom {
+}
+
+
+#selectTo {
+}
+
+.buybutton {
+    background-color: #C0B283;
+    border: none;
+    font-family: georgia, serif;
+    height: 30px;
+    color: white;
+    width: 90px;
+    border: solid #F4F4F4 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.resultholder {
+}
+
+.timeshow {
+    font-size: 22px;
+}
+
+.pcode {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.price {
+    color: maroon;
+    font-weight: bold;
+    
+}
+
+.resultborder {
+    height: 50px;
+    text-align: center;
+    background-color: #C0B283; 
+}
+
+
+.flightdate {
+    font-size: 15px;
+}
+
+.flightTable {
+    background: #F4F4F4;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.flightresults th {
+    padding: 25px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+.flightContainer {
+    position: absolute;
+    background: white;
+    left: calc(35px);
+    right: calc(35px);
+}
+
+.flightresults {
+    width: 99%;
+    border: solid #f4f4f4 1px;
+    margin: 5px;
+}
+
+
+.flightresults td {
+    padding: 20px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+
+#menu td a:hover {
+    background-color: #DcD0C0;
+}
+
+#menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #373737;
+    
+}
